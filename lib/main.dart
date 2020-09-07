@@ -34,11 +34,11 @@ class _BallState extends State<Ball> {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         Container(
-           margin: EdgeInsets.symmetric(vertical: 30.0, horizontal: 20.0),
           child: Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(40.0),
             child: Text(
               'Got a question? Click the ball!',
               style: TextStyle(
@@ -50,7 +50,6 @@ class _BallState extends State<Ball> {
           ),
         ),
         Container(
-          margin: EdgeInsets.only(top: 150.0),
           child: Padding(
             padding: const EdgeInsets.all(25.0),
             child: FlatButton(
